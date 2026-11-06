@@ -46,7 +46,7 @@ export default function HomePage() {
         )}
       </section>
       <footer className="page-footer">
-        <p>Starter scope · One screen, one service check, no personal data.</p>
+        <p>Starter scope · Service and database checks, no personal data.</p>
       </footer>
     </main>
   );

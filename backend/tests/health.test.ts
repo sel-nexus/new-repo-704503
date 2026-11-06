@@ -31,7 +31,7 @@ describe('health HTTP contract', () => {
     expect(response.text).toBeUndefined();
   });
 
-  it.each(['/api/missing', '/api/health/missing', '/api/%3Cscript%3E', '/api/v1/readiness'])('safely rejects unknown path %s', async (url) => {
+  it.each(['/api/missing', '/api/health/missing', '/api/%3Cscript%3E', '/api/v1/missing'])('safely rejects unknown path %s', async (url) => {
     const response = await request(app).get(url);
     expect(response.status).toBe(404);
     expect(response.body).toEqual({ error: 'Not found' });

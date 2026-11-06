@@ -4,6 +4,8 @@ import cors from 'cors';
 import type { ErrorRequestHandler } from 'express';
 import type { Config } from './config';
 import { healthRouter } from './features/health/routes';
+import type { DatabaseSync } from 'node:sqlite';
+import { createReadinessRouter } from './features/readiness/routes';
 
 /** Create an API with explicit CORS and safe, bounded error responses.
  * Args:
@@ -11,7 +13,7 @@ import { healthRouter } from './features/health/routes';
  * Returns:
  *   An app usable by the listener or in-process HTTP tests.
  */
-export function createApp(config: Pick<Config, 'CORS_ORIGINS'>) {
+export function createApp(config: Pick<Config, 'CORS_ORIGINS'> & { database?: DatabaseSync }) {
   const app = express();
   app.disable('x-powered-by');
   app.use(cors({
@@ -28,6 +30,7 @@ export function createApp(config: Pick<Config, 'CORS_ORIGINS'>) {
   app.use(express.json({ limit: '16kb' }));
   app.use(express.urlencoded({ extended: false, limit: '16kb' }));
   app.use('/api/health', healthRouter);
+  app.use('/api/v1/readiness', createReadinessRouter(config.database));
   /** Hide unknown paths and never echo user-supplied URLs. */
   app.use((_req, res) => { res.status(404).json({ error: 'Not found' }); });
   /** Normalize parser failures and conceal internal exception details. */
