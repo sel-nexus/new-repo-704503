@@ -17,7 +17,7 @@ export default defineConfig({
     {
       command: 'npm run build && npm start', cwd: '../backend',
       url: `${backendUrl}/api/health`, reuseExistingServer: false, timeout: 60000,
-      env: { NODE_ENV: 'test', HOST: '127.0.0.1', PORT: String(backendPort), CORS_ORIGINS: frontendUrl }
+      env: { NODE_ENV: 'test', HOST: '127.0.0.1', PORT: String(backendPort), CORS_ORIGINS: frontendUrl, DATABASE_URL: process.env.E2E_DATABASE_URL ?? 'file:/tmp/starter-e2e.db' }
     },
     {
       command: 'npm run dev', url: frontendUrl, reuseExistingServer: false, timeout: 60000,

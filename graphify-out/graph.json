@@ -309,7 +309,7 @@
       "label": "createApp()",
       "file_type": "code",
       "source_file": "backend/src/app.ts",
-      "source_location": "L14",
+      "source_location": "L16",
       "_callable": true,
       "_origin": "ast"
     },
@@ -357,6 +357,58 @@
       "_origin": "ast"
     },
     {
+      "id": "backend_src_db_connection",
+      "label": "connection.ts",
+      "file_type": "code",
+      "source_file": "backend/src/db/connection.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_db_connection_migratedatabase",
+      "label": "migrateDatabase()",
+      "file_type": "code",
+      "source_file": "backend/src/db/connection.ts",
+      "source_location": "L12",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "exec",
+            "receiver_type": "DatabaseSync",
+            "lang": "typescript",
+            "line": "L13"
+          },
+          {
+            "callee": "prepare",
+            "receiver_type": "DatabaseSync",
+            "lang": "typescript",
+            "line": "L23"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_db_connection_opendatabase",
+      "label": "openDatabase()",
+      "file_type": "code",
+      "source_file": "backend/src/db/connection.ts",
+      "source_location": "L42",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "close",
+            "receiver_type": "DatabaseSync",
+            "lang": "typescript",
+            "line": "L56"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
       "id": "backend_src_features_health_routes",
       "label": "routes.ts",
       "file_type": "code",
@@ -373,6 +425,60 @@
       "_origin": "ast"
     },
     {
+      "id": "backend_src_features_readiness_routes",
+      "label": "routes.ts",
+      "file_type": "code",
+      "source_file": "backend/src/features/readiness/routes.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_features_readiness_routes_createreadinessrouter",
+      "label": "createReadinessRouter()",
+      "file_type": "code",
+      "source_file": "backend/src/features/readiness/routes.ts",
+      "source_location": "L13",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_features_readiness_service",
+      "label": "service.ts",
+      "file_type": "code",
+      "source_file": "backend/src/features/readiness/service.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_features_readiness_service_readinessresponse",
+      "label": "ReadinessResponse",
+      "file_type": "code",
+      "source_file": "backend/src/features/readiness/service.ts",
+      "source_location": "L4",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_features_readiness_service_checkreadiness",
+      "label": "checkReadiness()",
+      "file_type": "code",
+      "source_file": "backend/src/features/readiness/service.ts",
+      "source_location": "L14",
+      "_callable": true,
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "prepare",
+            "receiver_type": "DatabaseSync",
+            "lang": "typescript",
+            "line": "L17"
+          }
+        ]
+      },
+      "_origin": "ast"
+    },
+    {
       "id": "backend_src_index",
       "label": "index.ts",
       "file_type": "code",
@@ -381,11 +487,20 @@
       "_origin": "ast"
     },
     {
+      "id": "backend_src_index_closedatabase",
+      "label": "closeDatabase()",
+      "file_type": "code",
+      "source_file": "backend/src/index.ts",
+      "source_location": "L9",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
       "id": "backend_src_index_shutdown",
       "label": "shutdown()",
       "file_type": "code",
       "source_file": "backend/src/index.ts",
-      "source_location": "L16",
+      "source_location": "L32",
       "_callable": true,
       "_origin": "ast"
     },
@@ -403,6 +518,31 @@
       "file_type": "code",
       "source_file": "backend/tests/health.test.ts",
       "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_readiness_test",
+      "label": "readiness.test.ts",
+      "file_type": "code",
+      "source_file": "backend/tests/readiness.test.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_readiness_test_open",
+      "label": "open()",
+      "file_type": "code",
+      "source_file": "backend/tests/readiness.test.ts",
+      "source_location": "L25",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_readiness_test_ready",
+      "label": "ready",
+      "file_type": "code",
+      "source_file": "backend/tests/readiness.test.ts",
+      "source_location": "L30",
       "_origin": "ast"
     },
     {
@@ -506,6 +646,14 @@
       "label": "vitest.config.ts",
       "file_type": "code",
       "source_file": "backend/vitest.config.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_e2e_database_readiness_spec",
+      "label": "database-readiness.spec.ts",
+      "file_type": "code",
+      "source_file": "frontend/e2e/database-readiness.spec.ts",
       "source_location": "L1",
       "_origin": "ast"
     },
@@ -930,7 +1078,7 @@
       "label": "NotFoundPage()",
       "file_type": "code",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L6",
+      "source_location": "L7",
       "_callable": true,
       "_origin": "ast"
     },
@@ -939,7 +1087,7 @@
       "label": "App()",
       "file_type": "code",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L18",
+      "source_location": "L19",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1029,6 +1177,103 @@
       "file_type": "code",
       "source_file": "frontend/src/features/health/HomePage.tsx",
       "source_location": "L11",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_features_readiness_client_test",
+      "label": "client.test.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/features/readiness/client.test.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_features_readiness_client_test_ready",
+      "label": "ready",
+      "file_type": "code",
+      "source_file": "frontend/src/features/readiness/client.test.ts",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_features_readiness_client",
+      "label": "client.ts",
+      "file_type": "code",
+      "source_file": "frontend/src/features/readiness/client.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_features_readiness_client_readinessresponse",
+      "label": "ReadinessResponse",
+      "file_type": "code",
+      "source_file": "frontend/src/features/readiness/client.ts",
+      "source_location": "L2",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_features_readiness_client_readinessoptions",
+      "label": "ReadinessOptions",
+      "file_type": "code",
+      "source_file": "frontend/src/features/readiness/client.ts",
+      "source_location": "L3",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_features_readiness_client_checkreadiness",
+      "label": "checkReadiness()",
+      "file_type": "code",
+      "source_file": "frontend/src/features/readiness/client.ts",
+      "source_location": "L13",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_features_readiness_readinesspage_test",
+      "label": "ReadinessPage.test.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.test.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_features_readiness_readinesspage",
+      "label": "ReadinessPage.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.tsx",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_features_readiness_readinesspage_checkstate",
+      "label": "CheckState",
+      "file_type": "code",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.tsx",
+      "source_location": "L6",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_features_readiness_readinesspage_readinesspage",
+      "label": "ReadinessPage()",
+      "file_type": "code",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.tsx",
+      "source_location": "L9",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_src_features_readiness_readinesspage_readinesspage_load",
+      "label": "load()",
+      "file_type": "code",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.tsx",
+      "source_location": "L15",
       "_callable": true,
       "_origin": "ast"
     },
@@ -1655,11 +1900,33 @@
     },
     {
       "source": "backend_src_app",
+      "target": "backend_src_features_readiness_routes",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/app.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_app",
+      "target": "backend_src_features_readiness_routes_createreadinessrouter",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/app.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_app",
       "target": "backend_src_app_createapp",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/app.ts",
-      "source_location": "L14",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -1726,6 +1993,37 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_src_db_connection",
+      "target": "backend_src_db_connection_migratedatabase",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/db/connection.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_db_connection",
+      "target": "backend_src_db_connection_opendatabase",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/db/connection.ts",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_db_connection_opendatabase",
+      "target": "backend_src_db_connection_migratedatabase",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/db/connection.ts",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_src_features_health_routes",
       "target": "ref_express",
       "relation": "imports_from",
@@ -1743,6 +2041,81 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/src/features/health/routes.ts",
       "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_features_readiness_routes",
+      "target": "ref_express",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/features/readiness/routes.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_features_readiness_routes",
+      "target": "ref_express",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/features/readiness/routes.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_features_readiness_routes",
+      "target": "backend_src_features_readiness_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/features/readiness/routes.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_features_readiness_routes",
+      "target": "backend_src_features_readiness_service_checkreadiness",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/features/readiness/routes.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_features_readiness_routes",
+      "target": "backend_src_features_readiness_routes_createreadinessrouter",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/features/readiness/routes.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_features_readiness_service",
+      "target": "backend_src_features_readiness_service_readinessresponse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/features/readiness/service.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_features_readiness_service",
+      "target": "backend_src_features_readiness_service_checkreadiness",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/features/readiness/service.ts",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -1792,11 +2165,65 @@
     },
     {
       "source": "backend_src_index",
+      "target": "backend_src_db_connection",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/index.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_index",
+      "target": "backend_src_db_connection_opendatabase",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/index.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_index",
+      "target": "backend_src_index_closedatabase",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/index.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_index",
       "target": "backend_src_index_shutdown",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/index.ts",
-      "source_location": "L16",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_index",
+      "target": "backend_src_index_closedatabase",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/index.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_index_shutdown",
+      "target": "backend_src_index_closedatabase",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/index.ts",
+      "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -1808,7 +2235,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.85,
       "source_file": "backend/src/index.ts",
-      "source_location": "L28",
+      "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -1874,6 +2301,114 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/tests/health.test.ts",
       "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_readiness_test",
+      "target": "ref_supertest",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/readiness.test.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_readiness_test",
+      "target": "backend_src_db_connection",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/readiness.test.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_readiness_test",
+      "target": "backend_src_db_connection_opendatabase",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/readiness.test.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_readiness_test",
+      "target": "backend_src_db_connection_migratedatabase",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/readiness.test.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_readiness_test",
+      "target": "backend_src_features_readiness_service",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/readiness.test.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_readiness_test",
+      "target": "backend_src_features_readiness_service_checkreadiness",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/readiness.test.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_readiness_test",
+      "target": "backend_src_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/readiness.test.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_readiness_test",
+      "target": "backend_src_app_createapp",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/readiness.test.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_readiness_test",
+      "target": "backend_tests_readiness_test_open",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/readiness.test.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_readiness_test",
+      "target": "backend_tests_readiness_test_ready",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/readiness.test.ts",
+      "source_location": "L30",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -1984,6 +2519,17 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/tsconfig.json",
       "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_database_readiness_spec",
+      "target": "ref_playwright_test",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/database-readiness.spec.ts",
+      "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2529,11 +3075,22 @@
     },
     {
       "source": "frontend_src_app",
+      "target": "frontend_src_features_readiness_readinesspage",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app",
       "target": "frontend_src_app_notfoundpage",
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L6",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2543,7 +3100,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2554,7 +3111,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L24",
+      "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2714,6 +3271,209 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/features/health/HomePage.tsx",
       "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_client_test",
+      "target": "frontend_src_features_readiness_client",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/client.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_client_test",
+      "target": "frontend_src_features_readiness_client_checkreadiness",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/client.test.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_client_test",
+      "target": "frontend_src_features_readiness_client_test_ready",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/client.test.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_client",
+      "target": "frontend_src_features_readiness_client_readinessresponse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/client.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_client",
+      "target": "frontend_src_features_readiness_client_readinessoptions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/client.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_client",
+      "target": "frontend_src_features_readiness_client_checkreadiness",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/client.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_readinesspage_test",
+      "target": "ref_testing_library_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.test.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_readinesspage_test",
+      "target": "ref_testing_library_user_event",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.test.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_readinesspage_test",
+      "target": "frontend_src_features_readiness_readinesspage",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.test.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_readinesspage_test",
+      "target": "frontend_src_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.test.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_readinesspage",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_readinesspage",
+      "target": "frontend_src_features_readiness_client",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_readinesspage",
+      "target": "frontend_src_features_readiness_client_checkreadiness",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_readinesspage",
+      "target": "frontend_src_features_readiness_client",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_readinesspage",
+      "target": "frontend_src_features_readiness_client_readinessresponse",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_readinesspage",
+      "target": "frontend_src_features_readiness_readinesspage_checkstate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_readinesspage",
+      "target": "frontend_src_features_readiness_readinesspage_readinesspage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_readinesspage_readinesspage",
+      "target": "frontend_src_features_readiness_readinesspage_readinesspage_load",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_readinesspage_readinesspage",
+      "target": "frontend_src_features_readiness_readinesspage_readinesspage_load",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.tsx",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2967,6 +3727,17 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_src_app",
+      "target": "frontend_src_features_readiness_readinesspage_readinesspage",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_src_features_health_homepage_test",
       "target": "frontend_src_features_health_homepage_homepage",
       "relation": "imports",
@@ -2989,6 +3760,28 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_src_features_readiness_readinesspage_test",
+      "target": "frontend_src_features_readiness_readinesspage_readinesspage",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.test.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_readinesspage_test",
+      "target": "frontend_src_app_app",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.test.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_src_main",
       "target": "frontend_src_app_app",
       "relation": "imports",
@@ -2996,6 +3789,39 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/main.tsx",
       "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_app_createapp",
+      "target": "backend_src_features_readiness_routes_createreadinessrouter",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/app.ts",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_features_readiness_routes_createreadinessrouter",
+      "target": "backend_src_features_readiness_service_checkreadiness",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/features/readiness/routes.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_readiness_test_open",
+      "target": "backend_src_db_connection_opendatabase",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/readiness.test.ts",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3011,6 +3837,17 @@
       "_origin": "ast"
     },
     {
+      "source": "frontend_src_features_readiness_readinesspage_readinesspage",
+      "target": "frontend_src_features_readiness_client_checkreadiness",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/features/readiness/ReadinessPage.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "frontend_src_app_app",
       "target": "frontend_src_features_health_homepage_homepage",
       "relation": "calls",
@@ -3018,7 +3855,19 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "frontend/src/App.tsx",
-      "source_location": "L23",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_app_app",
+      "target": "frontend_src_features_readiness_readinesspage_readinesspage",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3033,13 +3882,25 @@
       "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast"
+    },
+    {
+      "source": "frontend_src_features_readiness_readinesspage_readinesspage_load",
+      "target": "frontend_src_features_readiness_client_checkreadiness",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/features/readiness/ReadinessPage.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
     }
   ],
   "metadata": {
-    "built_at": "2026-11-06T09:21:21.415361+00:00",
+    "built_at": "2026-11-06T09:29:32.429756+00:00",
     "version": "graph_update-v1",
     "codebase_root": "C:\\artifacts-v2\\T0132PcJVCRTV000406112608405188\\developer",
     "force": true,
-    "files_scanned": 24
+    "files_scanned": 33
   }
 }

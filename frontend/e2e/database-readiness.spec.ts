@@ -1,11 +1,20 @@
 /** Prove real SQLite readiness, linked navigation and reload without network mocks. */
 import { expect, test } from '@playwright/test';
 
-test('navigates to live database readiness, reloads and returns home', async ({ page }, testInfo) => {
+test('checks live health, navigates to live database readiness, reloads and returns home', async ({ page }, testInfo) => {
   const errors: string[] = [];
   page.on('console', (message) => { if (message.type() === 'error') { errors.push(message.text()); } });
   page.on('pageerror', (error) => { errors.push(error.message); });
   await page.goto('/');
+  const healthCheck = page.waitForResponse((result) =>
+    new URL(result.url()).pathname === '/api/health' && result.request().method() === 'GET'
+  );
+  await page.getByRole('button', { name: 'Check backend' }).click();
+  const healthResponse = await healthCheck;
+  expect(healthResponse.status()).toBe(200);
+  const healthPayload = await healthResponse.json();
+  expect(healthPayload).toEqual({ status: 'ok' });
+  await expect(page.getByRole('status')).toContainText(`Response status: ${healthPayload.status}`);
   const initial = page.waitForResponse((response) =>
     new URL(response.url()).pathname === '/api/v1/readiness' && response.request().method() === 'GET'
   );

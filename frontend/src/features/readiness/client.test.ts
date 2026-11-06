@@ -29,6 +29,15 @@ describe('readiness client', () => {
     vi.spyOn(globalThis, 'fetch').mockResolvedValue(new Response(JSON.stringify(payload)));
     await expect(checkReadiness()).rejects.toThrow('invalid readiness response');
   });
+  it.each([
+    ['status', { database: 'sqlite', schemaVersion: 1 }],
+    ['database', { status: 'ready', schemaVersion: 1 }]
+  ])('rejects an isolated missing %s field with a safe error', async (_field, payload) => {
+    vi.spyOn(globalThis, 'fetch').mockResolvedValue(new Response(JSON.stringify(payload)));
+    await expect(checkReadiness()).rejects.toEqual(
+      new Error('The backend returned an invalid readiness response. Try again.')
+    );
+  });
   it('conceals invalid JSON contents', async () => {
     vi.spyOn(globalThis, 'fetch').mockResolvedValue(new Response('<html>private</html>'));
     await expect(checkReadiness()).rejects.toThrow('invalid readiness response');

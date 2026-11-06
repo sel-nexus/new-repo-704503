@@ -1,8 +1,11 @@
 /** Exercise the actual HTTP boundary, including method and CORS failures. */
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
+import express from 'express';
+import type { Request, Response } from 'express';
 import request from 'supertest';
 import { createApp } from '../src/app';
 import { loadConfig } from '../src/config';
+import { errorHandler } from '../src/middleware/errorHandler';
 
 const allowedOrigin = 'http://localhost:5173';
 const app = createApp({ CORS_ORIGINS: [allowedOrigin] });
@@ -87,6 +90,35 @@ describe('health HTTP contract', () => {
     const response = await request(app).post('/api/health').send({ content: 'x'.repeat(17000) });
     expect(response.status).toBe(413);
     expect(response.body).toEqual({ error: 'Request too large' });
+  });
+});
+
+describe('safe error middleware', () => {
+  it.each([new Error('private diagnostic'), null, 'private diagnostic', {}, { status: 401 }, { status: '400' }])(
+    'conceals unexpected failures with an exact generic 500: %j', async (failure) => {
+      const failingApp = express();
+      failingApp.get('/failure', (_req, _res, next) => next(failure ?? new Error('private diagnostic')));
+      // Direct invocation exercises null, which Express treats as no error in next().
+      if (failure === null) {
+        failingApp.get('/null', (req, res, next) => errorHandler(null, req, res, next));
+      }
+      failingApp.use(errorHandler);
+      const response = await request(failingApp).get(failure === null ? '/null' : '/failure');
+      expect(response.status).toBe(500);
+      expect(response.body).toEqual({ error: 'Internal server error' });
+      expect(response.text).not.toContain('private diagnostic');
+    }
+  );
+
+  it('delegates the original error without writing after headers were sent', () => {
+    const error = Object.assign(new Error('private diagnostic'), { status: 400 });
+    const status = vi.fn();
+    const json = vi.fn();
+    const next = vi.fn();
+    errorHandler(error, {} as Request, { headersSent: true, status, json } as unknown as Response, next);
+    expect(next).toHaveBeenCalledExactlyOnceWith(error);
+    expect(status).not.toHaveBeenCalled();
+    expect(json).not.toHaveBeenCalled();
   });
 });
 
