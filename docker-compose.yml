@@ -1,0 +1,31 @@
+services:
+  backend:
+    build: ./backend
+    environment:
+      NODE_ENV: production
+      HOST: 0.0.0.0
+      PORT: 3001
+      CORS_ORIGINS: ${CORS_ORIGINS:-}
+      DATABASE_URL: file:/app/data/starter.db
+    ports:
+      - "${BACKEND_PORT:-3001}:3001"
+    volumes:
+      - sqlite-data:/app/data
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:'+process.env.PORT+'/api/health').then(r=>process.exit(r.status===200?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL:-/}
+        VITE_HEALTH_TIMEOUT_MS: ${VITE_HEALTH_TIMEOUT_MS:-5000}
+    ports:
+      - "${FRONTEND_PORT:-8080}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+volumes:
+  sqlite-data:

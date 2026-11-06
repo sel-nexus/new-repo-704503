@@ -1,0 +1,34 @@
+{
+  "name": "starter-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24 <25" },
+  "scripts": {
+    "dev": "node node_modules/vite/bin/vite.js",
+    "build": "node node_modules/typescript/bin/tsc --noEmit && node node_modules/vite/bin/vite.js build",
+    "preview": "node node_modules/vite/bin/vite.js preview",
+    "test": "node node_modules/vitest/vitest.mjs run",
+    "test:e2e": "node node_modules/@playwright/test/cli.js test"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "7.18.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0",
+    "@testing-library/dom": "10.4.0",
+    "@testing-library/jest-dom": "6.6.3",
+    "@testing-library/react": "16.3.0",
+    "@testing-library/user-event": "14.6.1",
+    "@types/node": "24.0.10",
+    "@types/react": "18.3.23",
+    "@types/react-dom": "18.3.7",
+    "@vitejs/plugin-react": "4.7.0",
+    "jsdom": "26.1.0",
+    "typescript": "5.8.3",
+    "vite": "6.4.5",
+    "vitest": "4.1.12"
+  }
+}
