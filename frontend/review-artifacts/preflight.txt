@@ -1,0 +1,511 @@
+desktop home
+- link "Skip to content":
+  - /url: "#main-content"
+- banner:
+  - navigation "Starter navigation":
+    - link "Home":
+      - /url: /
+    - text: ·
+    - link "Database readiness":
+      - /url: /readiness
+- main:
+  - paragraph: APPLICATION STARTER
+  - heading "A clean starting point." [level=1]
+  - paragraph: A small foundation for your next application. React on the frontend, Express on the backend. No domain features or login.
+  - region "Backend connection":
+    - heading "Backend connection" [level=2]
+    - code: GET /api/health
+    - paragraph: Send a live request to confirm the API responds. This checks the service only, not a database or external dependency.
+    - button "Check backend"
+    - status:
+      - paragraph: Not checked yet. Start a check when you’re ready.
+  - paragraph: Starter scope · Service and database checks, no personal data.
+<!DOCTYPE html><html lang="en"><head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A neutral React and Express application starter with a live backend connection check.">
+    <meta name="theme-color" content="#f8f8f5">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <title>Application starter</title>
+  <style type="text/css" data-vite-dev-id="/c/artifacts-v2/T0132PcJVCRTV000406112608405188/developer/frontend/src/styles.css">/* Keep the technical starter type-led, flat and restrained. */
+:root {
+  color-scheme: light;
+  --neutral-50: oklch(98% 0.005 95);
+  --neutral-100: oklch(94% 0.005 95);
+  --neutral-200: oklch(86% 0.005 95);
+  --neutral-300: oklch(78% 0.005 95);
+  --neutral-400: oklch(70% 0.005 95);
+  --neutral-500: oklch(62% 0.005 95);
+  --neutral-600: oklch(54% 0.005 95);
+  --neutral-700: oklch(46% 0.005 95);
+  --neutral-800: oklch(38% 0.005 95);
+  --neutral-900: oklch(30% 0.005 95);
+  --neutral-950: oklch(22% 0.005 95);
+  --background: #f8f8f5;
+  --surface: #ffffff;
+  --surface-raised: var(--neutral-100);
+  --foreground: #252824;
+  --foreground-muted: #60635e;
+  --border: #d9dcd5;
+  --primary: #155e59;
+  --primary-hover: #104d48;
+  --on-primary: #ffffff;
+  --ring: var(--primary);
+  --error: #8a3535;
+  --radius: 6px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 64px;
+  --space-7: 96px;
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'SF Mono', Consolas, monospace;
+  --duration: 150ms;
+  --ease: ease-out;
+  font-family: var(--font-sans);
+  color: var(--foreground);
+  background: var(--background);
+  line-height: 1.6;
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 280px; }
+h1, h2, p { margin: 0; }
+h1 { font-size: clamp(2.25rem, 5vw, 3.5rem); font-weight: 500; line-height: 1.15; letter-spacing: -0.035em; }
+h2 { font-size: 1.25rem; font-weight: 600; line-height: 1.3; }
+p { max-width: 65ch; }
+code { font-family: var(--font-mono); font-size: 0.875rem; overflow-wrap: anywhere; }
+a { color: var(--primary); text-underline-offset: 4px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--ring); outline-offset: 4px; }
+::selection { background: var(--border); }
+.page { max-width: 880px; margin: 0 auto; padding: var(--space-7) var(--space-5) var(--space-6); }
+.intro { margin-bottom: var(--space-6); }
+.eyebrow { color: var(--foreground-muted); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.12em; margin-bottom: var(--space-4); }
+.lead { font-size: 1.125rem; color: var(--foreground-muted); margin: var(--space-4) 0 var(--space-5); }
+.check-panel { padding: var(--space-5); border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.check-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-3); }
+.check-heading code { color: var(--foreground-muted); }
+.check-panel > p { color: var(--foreground-muted); margin-bottom: var(--space-4); }
+button { font: inherit; font-weight: 500; border: 1px solid transparent; border-radius: var(--radius); padding: 10px 20px; min-height: 44px; background: var(--primary); color: var(--on-primary); cursor: pointer; transition: background-color var(--duration) var(--ease); }
+button:hover:not(:disabled) { background: var(--primary-hover); }
+button:active:not(:disabled) { background: var(--primary-hover); }
+button:disabled { cursor: wait; background: var(--foreground-muted); }
+.check-status { margin-top: var(--space-4); min-height: 3.2em; font-size: 0.9375rem; color: var(--foreground-muted); }
+.check-panel > .error-message { color: var(--error); margin: 0; }
+.page-footer { padding-top: var(--space-5); color: var(--foreground-muted); font-size: 0.8125rem; }
+.skip-link { position: absolute; top: var(--space-3); left: var(--space-3); padding: var(--space-2) var(--space-3); background: var(--surface); transform: translateY(-200%); }
+.skip-link:focus { transform: translateY(0); }
+@media (max-width: 600px) {
+  .page { padding: var(--space-6) var(--space-4) var(--space-5); }
+  .check-panel { padding: var(--space-4); }
+  .check-heading { flex-direction: column; gap: var(--space-2); }
+  button { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0s !important; animation-duration: 0s !important; }
+}
+</style></head>
+  <body>
+    <div id="root"><a class="skip-link" href="#main-content">Skip to content</a><header class="page" style="padding-block: var(--space-4); border-bottom: 1px solid var(--border);"><nav aria-label="Starter navigation"><a aria-current="page" class="active" href="/" data-discover="true">Home</a> · <a class="" href="/readiness" data-discover="true">Database readiness</a></nav></header><main id="main-content" class="page"><header class="intro"><p class="eyebrow">APPLICATION STARTER</p><h1>A clean starting point.</h1><p class="lead">A small foundation for your next application. React on the frontend, Express on the backend. No domain features or login.</p></header><section class="check-panel" aria-labelledby="check-title"><div class="check-heading"><h2 id="check-title">Backend connection</h2><code>GET /api/health</code></div><p>Send a live request to confirm the API responds. This checks the service only, not a database or external dependency.</p><button type="button" aria-describedby="check-status">Check backend</button><div id="check-status" class="check-status" role="status" aria-live="polite" aria-atomic="true"><p>Not checked yet. Start a check when you’re ready.</p></div></section><footer class="page-footer"><p>Starter scope · Service and database checks, no personal data.</p></footer></main></div>
+    <script type="module" src="/src/main.tsx"></script>
+  
+
+</body></html>
+
+desktop readiness
+- link "Skip to content":
+  - /url: "#main-content"
+- banner:
+  - navigation "Starter navigation":
+    - link "Home":
+      - /url: /
+    - text: ·
+    - link "Database readiness":
+      - /url: /readiness
+- main:
+  - paragraph: APPLICATION STARTER
+  - heading "Database readiness." [level=1]
+  - paragraph: Verify the file-backed SQLite connection and its internal schema version. No domain records or login.
+  - region "SQLite connection":
+    - heading "SQLite connection" [level=2]
+    - code: GET /api/v1/readiness
+    - paragraph: This read-only check queries the database opened by the backend. It does not create business data.
+    - button "Check again"
+    - status:
+      - paragraph:
+        - text: "Database ready. Response status:"
+        - code: ready
+        - text: ". Database:"
+        - code: sqlite
+        - text: ". Schema version:"
+        - code: "1"
+        - text: .
+  - paragraph: Starter scope · Internal metadata only, no personal data.
+{"font":"\"Helvetica Neue\", Arial, sans-serif","background":"rgba(0, 0, 0, 0)","mainWidth":"880px","overflow":false}
+<!DOCTYPE html><html lang="en"><head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A neutral React and Express application starter with a live backend connection check.">
+    <meta name="theme-color" content="#f8f8f5">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <title>Application starter</title>
+  <style type="text/css" data-vite-dev-id="/c/artifacts-v2/T0132PcJVCRTV000406112608405188/developer/frontend/src/styles.css">/* Keep the technical starter type-led, flat and restrained. */
+:root {
+  color-scheme: light;
+  --neutral-50: oklch(98% 0.005 95);
+  --neutral-100: oklch(94% 0.005 95);
+  --neutral-200: oklch(86% 0.005 95);
+  --neutral-300: oklch(78% 0.005 95);
+  --neutral-400: oklch(70% 0.005 95);
+  --neutral-500: oklch(62% 0.005 95);
+  --neutral-600: oklch(54% 0.005 95);
+  --neutral-700: oklch(46% 0.005 95);
+  --neutral-800: oklch(38% 0.005 95);
+  --neutral-900: oklch(30% 0.005 95);
+  --neutral-950: oklch(22% 0.005 95);
+  --background: #f8f8f5;
+  --surface: #ffffff;
+  --surface-raised: var(--neutral-100);
+  --foreground: #252824;
+  --foreground-muted: #60635e;
+  --border: #d9dcd5;
+  --primary: #155e59;
+  --primary-hover: #104d48;
+  --on-primary: #ffffff;
+  --ring: var(--primary);
+  --error: #8a3535;
+  --radius: 6px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 64px;
+  --space-7: 96px;
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'SF Mono', Consolas, monospace;
+  --duration: 150ms;
+  --ease: ease-out;
+  font-family: var(--font-sans);
+  color: var(--foreground);
+  background: var(--background);
+  line-height: 1.6;
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 280px; }
+h1, h2, p { margin: 0; }
+h1 { font-size: clamp(2.25rem, 5vw, 3.5rem); font-weight: 500; line-height: 1.15; letter-spacing: -0.035em; }
+h2 { font-size: 1.25rem; font-weight: 600; line-height: 1.3; }
+p { max-width: 65ch; }
+code { font-family: var(--font-mono); font-size: 0.875rem; overflow-wrap: anywhere; }
+a { color: var(--primary); text-underline-offset: 4px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--ring); outline-offset: 4px; }
+::selection { background: var(--border); }
+.page { max-width: 880px; margin: 0 auto; padding: var(--space-7) var(--space-5) var(--space-6); }
+.intro { margin-bottom: var(--space-6); }
+.eyebrow { color: var(--foreground-muted); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.12em; margin-bottom: var(--space-4); }
+.lead { font-size: 1.125rem; color: var(--foreground-muted); margin: var(--space-4) 0 var(--space-5); }
+.check-panel { padding: var(--space-5); border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.check-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-3); }
+.check-heading code { color: var(--foreground-muted); }
+.check-panel > p { color: var(--foreground-muted); margin-bottom: var(--space-4); }
+button { font: inherit; font-weight: 500; border: 1px solid transparent; border-radius: var(--radius); padding: 10px 20px; min-height: 44px; background: var(--primary); color: var(--on-primary); cursor: pointer; transition: background-color var(--duration) var(--ease); }
+button:hover:not(:disabled) { background: var(--primary-hover); }
+button:active:not(:disabled) { background: var(--primary-hover); }
+button:disabled { cursor: wait; background: var(--foreground-muted); }
+.check-status { margin-top: var(--space-4); min-height: 3.2em; font-size: 0.9375rem; color: var(--foreground-muted); }
+.check-panel > .error-message { color: var(--error); margin: 0; }
+.page-footer { padding-top: var(--space-5); color: var(--foreground-muted); font-size: 0.8125rem; }
+.skip-link { position: absolute; top: var(--space-3); left: var(--space-3); padding: var(--space-2) var(--space-3); background: var(--surface); transform: translateY(-200%); }
+.skip-link:focus { transform: translateY(0); }
+@media (max-width: 600px) {
+  .page { padding: var(--space-6) var(--space-4) var(--space-5); }
+  .check-panel { padding: var(--space-4); }
+  .check-heading { flex-direction: column; gap: var(--space-2); }
+  button { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0s !important; animation-duration: 0s !important; }
+}
+</style></head>
+  <body>
+    <div id="root"><a class="skip-link" href="#main-content">Skip to content</a><header class="page" style="padding-block: var(--space-4); border-bottom: 1px solid var(--border);"><nav aria-label="Starter navigation"><a class="" href="/" data-discover="true">Home</a> · <a class="active" href="/readiness" data-discover="true" aria-current="page">Database readiness</a></nav></header><main id="main-content" class="page"><header class="intro"><p class="eyebrow">APPLICATION STARTER</p><h1>Database readiness.</h1><p class="lead">Verify the file-backed SQLite connection and its internal schema version. No domain records or login.</p></header><section class="check-panel" aria-labelledby="readiness-title"><div class="check-heading"><h2 id="readiness-title">SQLite connection</h2><code>GET /api/v1/readiness</code></div><p>This read-only check queries the database opened by the backend. It does not create business data.</p><button type="button" aria-describedby="readiness-status">Check again</button><div id="readiness-status" class="check-status" role="status" aria-live="polite" aria-atomic="true"><p>Database ready. Response status: <code>ready</code>. Database: <code>sqlite</code>. Schema version: <code>1</code>.</p></div></section><footer class="page-footer"><p>Starter scope · Internal metadata only, no personal data.</p></footer></main></div>
+    <script type="module" src="/src/main.tsx"></script>
+  
+
+</body></html>
+
+mobile home
+- link "Skip to content":
+  - /url: "#main-content"
+- banner:
+  - navigation "Starter navigation":
+    - link "Home":
+      - /url: /
+    - text: ·
+    - link "Database readiness":
+      - /url: /readiness
+- main:
+  - paragraph: APPLICATION STARTER
+  - heading "A clean starting point." [level=1]
+  - paragraph: A small foundation for your next application. React on the frontend, Express on the backend. No domain features or login.
+  - region "Backend connection":
+    - heading "Backend connection" [level=2]
+    - code: GET /api/health
+    - paragraph: Send a live request to confirm the API responds. This checks the service only, not a database or external dependency.
+    - button "Check backend"
+    - status:
+      - paragraph: Not checked yet. Start a check when you’re ready.
+  - paragraph: Starter scope · Service and database checks, no personal data.
+<!DOCTYPE html><html lang="en"><head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A neutral React and Express application starter with a live backend connection check.">
+    <meta name="theme-color" content="#f8f8f5">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <title>Application starter</title>
+  <style type="text/css" data-vite-dev-id="/c/artifacts-v2/T0132PcJVCRTV000406112608405188/developer/frontend/src/styles.css">/* Keep the technical starter type-led, flat and restrained. */
+:root {
+  color-scheme: light;
+  --neutral-50: oklch(98% 0.005 95);
+  --neutral-100: oklch(94% 0.005 95);
+  --neutral-200: oklch(86% 0.005 95);
+  --neutral-300: oklch(78% 0.005 95);
+  --neutral-400: oklch(70% 0.005 95);
+  --neutral-500: oklch(62% 0.005 95);
+  --neutral-600: oklch(54% 0.005 95);
+  --neutral-700: oklch(46% 0.005 95);
+  --neutral-800: oklch(38% 0.005 95);
+  --neutral-900: oklch(30% 0.005 95);
+  --neutral-950: oklch(22% 0.005 95);
+  --background: #f8f8f5;
+  --surface: #ffffff;
+  --surface-raised: var(--neutral-100);
+  --foreground: #252824;
+  --foreground-muted: #60635e;
+  --border: #d9dcd5;
+  --primary: #155e59;
+  --primary-hover: #104d48;
+  --on-primary: #ffffff;
+  --ring: var(--primary);
+  --error: #8a3535;
+  --radius: 6px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 64px;
+  --space-7: 96px;
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'SF Mono', Consolas, monospace;
+  --duration: 150ms;
+  --ease: ease-out;
+  font-family: var(--font-sans);
+  color: var(--foreground);
+  background: var(--background);
+  line-height: 1.6;
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 280px; }
+h1, h2, p { margin: 0; }
+h1 { font-size: clamp(2.25rem, 5vw, 3.5rem); font-weight: 500; line-height: 1.15; letter-spacing: -0.035em; }
+h2 { font-size: 1.25rem; font-weight: 600; line-height: 1.3; }
+p { max-width: 65ch; }
+code { font-family: var(--font-mono); font-size: 0.875rem; overflow-wrap: anywhere; }
+a { color: var(--primary); text-underline-offset: 4px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--ring); outline-offset: 4px; }
+::selection { background: var(--border); }
+.page { max-width: 880px; margin: 0 auto; padding: var(--space-7) var(--space-5) var(--space-6); }
+.intro { margin-bottom: var(--space-6); }
+.eyebrow { color: var(--foreground-muted); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.12em; margin-bottom: var(--space-4); }
+.lead { font-size: 1.125rem; color: var(--foreground-muted); margin: var(--space-4) 0 var(--space-5); }
+.check-panel { padding: var(--space-5); border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.check-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-3); }
+.check-heading code { color: var(--foreground-muted); }
+.check-panel > p { color: var(--foreground-muted); margin-bottom: var(--space-4); }
+button { font: inherit; font-weight: 500; border: 1px solid transparent; border-radius: var(--radius); padding: 10px 20px; min-height: 44px; background: var(--primary); color: var(--on-primary); cursor: pointer; transition: background-color var(--duration) var(--ease); }
+button:hover:not(:disabled) { background: var(--primary-hover); }
+button:active:not(:disabled) { background: var(--primary-hover); }
+button:disabled { cursor: wait; background: var(--foreground-muted); }
+.check-status { margin-top: var(--space-4); min-height: 3.2em; font-size: 0.9375rem; color: var(--foreground-muted); }
+.check-panel > .error-message { color: var(--error); margin: 0; }
+.page-footer { padding-top: var(--space-5); color: var(--foreground-muted); font-size: 0.8125rem; }
+.skip-link { position: absolute; top: var(--space-3); left: var(--space-3); padding: var(--space-2) var(--space-3); background: var(--surface); transform: translateY(-200%); }
+.skip-link:focus { transform: translateY(0); }
+@media (max-width: 600px) {
+  .page { padding: var(--space-6) var(--space-4) var(--space-5); }
+  .check-panel { padding: var(--space-4); }
+  .check-heading { flex-direction: column; gap: var(--space-2); }
+  button { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0s !important; animation-duration: 0s !important; }
+}
+</style></head>
+  <body>
+    <div id="root"><a class="skip-link" href="#main-content">Skip to content</a><header class="page" style="padding-block: var(--space-4); border-bottom: 1px solid var(--border);"><nav aria-label="Starter navigation"><a aria-current="page" class="active" href="/" data-discover="true">Home</a> · <a class="" href="/readiness" data-discover="true">Database readiness</a></nav></header><main id="main-content" class="page"><header class="intro"><p class="eyebrow">APPLICATION STARTER</p><h1>A clean starting point.</h1><p class="lead">A small foundation for your next application. React on the frontend, Express on the backend. No domain features or login.</p></header><section class="check-panel" aria-labelledby="check-title"><div class="check-heading"><h2 id="check-title">Backend connection</h2><code>GET /api/health</code></div><p>Send a live request to confirm the API responds. This checks the service only, not a database or external dependency.</p><button type="button" aria-describedby="check-status">Check backend</button><div id="check-status" class="check-status" role="status" aria-live="polite" aria-atomic="true"><p>Not checked yet. Start a check when you’re ready.</p></div></section><footer class="page-footer"><p>Starter scope · Service and database checks, no personal data.</p></footer></main></div>
+    <script type="module" src="/src/main.tsx"></script>
+  
+
+</body></html>
+
+mobile readiness
+- link "Skip to content":
+  - /url: "#main-content"
+- banner:
+  - navigation "Starter navigation":
+    - link "Home":
+      - /url: /
+    - text: ·
+    - link "Database readiness":
+      - /url: /readiness
+- main:
+  - paragraph: APPLICATION STARTER
+  - heading "Database readiness." [level=1]
+  - paragraph: Verify the file-backed SQLite connection and its internal schema version. No domain records or login.
+  - region "SQLite connection":
+    - heading "SQLite connection" [level=2]
+    - code: GET /api/v1/readiness
+    - paragraph: This read-only check queries the database opened by the backend. It does not create business data.
+    - button "Check again"
+    - status:
+      - paragraph:
+        - text: "Database ready. Response status:"
+        - code: ready
+        - text: ". Database:"
+        - code: sqlite
+        - text: ". Schema version:"
+        - code: "1"
+        - text: .
+  - paragraph: Starter scope · Internal metadata only, no personal data.
+{"font":"\"Helvetica Neue\", Arial, sans-serif","background":"rgba(0, 0, 0, 0)","mainWidth":"393px","overflow":false}
+<!DOCTYPE html><html lang="en"><head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A neutral React and Express application starter with a live backend connection check.">
+    <meta name="theme-color" content="#f8f8f5">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <title>Application starter</title>
+  <style type="text/css" data-vite-dev-id="/c/artifacts-v2/T0132PcJVCRTV000406112608405188/developer/frontend/src/styles.css">/* Keep the technical starter type-led, flat and restrained. */
+:root {
+  color-scheme: light;
+  --neutral-50: oklch(98% 0.005 95);
+  --neutral-100: oklch(94% 0.005 95);
+  --neutral-200: oklch(86% 0.005 95);
+  --neutral-300: oklch(78% 0.005 95);
+  --neutral-400: oklch(70% 0.005 95);
+  --neutral-500: oklch(62% 0.005 95);
+  --neutral-600: oklch(54% 0.005 95);
+  --neutral-700: oklch(46% 0.005 95);
+  --neutral-800: oklch(38% 0.005 95);
+  --neutral-900: oklch(30% 0.005 95);
+  --neutral-950: oklch(22% 0.005 95);
+  --background: #f8f8f5;
+  --surface: #ffffff;
+  --surface-raised: var(--neutral-100);
+  --foreground: #252824;
+  --foreground-muted: #60635e;
+  --border: #d9dcd5;
+  --primary: #155e59;
+  --primary-hover: #104d48;
+  --on-primary: #ffffff;
+  --ring: var(--primary);
+  --error: #8a3535;
+  --radius: 6px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 64px;
+  --space-7: 96px;
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'SF Mono', Consolas, monospace;
+  --duration: 150ms;
+  --ease: ease-out;
+  font-family: var(--font-sans);
+  color: var(--foreground);
+  background: var(--background);
+  line-height: 1.6;
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 280px; }
+h1, h2, p { margin: 0; }
+h1 { font-size: clamp(2.25rem, 5vw, 3.5rem); font-weight: 500; line-height: 1.15; letter-spacing: -0.035em; }
+h2 { font-size: 1.25rem; font-weight: 600; line-height: 1.3; }
+p { max-width: 65ch; }
+code { font-family: var(--font-mono); font-size: 0.875rem; overflow-wrap: anywhere; }
+a { color: var(--primary); text-underline-offset: 4px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--ring); outline-offset: 4px; }
+::selection { background: var(--border); }
+.page { max-width: 880px; margin: 0 auto; padding: var(--space-7) var(--space-5) var(--space-6); }
+.intro { margin-bottom: var(--space-6); }
+.eyebrow { color: var(--foreground-muted); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.12em; margin-bottom: var(--space-4); }
+.lead { font-size: 1.125rem; color: var(--foreground-muted); margin: var(--space-4) 0 var(--space-5); }
+.check-panel { padding: var(--space-5); border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.check-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-3); }
+.check-heading code { color: var(--foreground-muted); }
+.check-panel > p { color: var(--foreground-muted); margin-bottom: var(--space-4); }
+button { font: inherit; font-weight: 500; border: 1px solid transparent; border-radius: var(--radius); padding: 10px 20px; min-height: 44px; background: var(--primary); color: var(--on-primary); cursor: pointer; transition: background-color var(--duration) var(--ease); }
+button:hover:not(:disabled) { background: var(--primary-hover); }
+button:active:not(:disabled) { background: var(--primary-hover); }
+button:disabled { cursor: wait; background: var(--foreground-muted); }
+.check-status { margin-top: var(--space-4); min-height: 3.2em; font-size: 0.9375rem; color: var(--foreground-muted); }
+.check-panel > .error-message { color: var(--error); margin: 0; }
+.page-footer { padding-top: var(--space-5); color: var(--foreground-muted); font-size: 0.8125rem; }
+.skip-link { position: absolute; top: var(--space-3); left: var(--space-3); padding: var(--space-2) var(--space-3); background: var(--surface); transform: translateY(-200%); }
+.skip-link:focus { transform: translateY(0); }
+@media (max-width: 600px) {
+  .page { padding: var(--space-6) var(--space-4) var(--space-5); }
+  .check-panel { padding: var(--space-4); }
+  .check-heading { flex-direction: column; gap: var(--space-2); }
+  button { width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0s !important; animation-duration: 0s !important; }
+}
+</style></head>
+  <body>
+    <div id="root"><a class="skip-link" href="#main-content">Skip to content</a><header class="page" style="padding-block: var(--space-4); border-bottom: 1px solid var(--border);"><nav aria-label="Starter navigation"><a class="" href="/" data-discover="true">Home</a> · <a class="active" href="/readiness" data-discover="true" aria-current="page">Database readiness</a></nav></header><main id="main-content" class="page"><header class="intro"><p class="eyebrow">APPLICATION STARTER</p><h1>Database readiness.</h1><p class="lead">Verify the file-backed SQLite connection and its internal schema version. No domain records or login.</p></header><section class="check-panel" aria-labelledby="readiness-title"><div class="check-heading"><h2 id="readiness-title">SQLite connection</h2><code>GET /api/v1/readiness</code></div><p>This read-only check queries the database opened by the backend. It does not create business data.</p><button type="button" aria-describedby="readiness-status">Check again</button><div id="readiness-status" class="check-status" role="status" aria-live="polite" aria-atomic="true"><p>Database ready. Response status: <code>ready</code>. Database: <code>sqlite</code>. Schema version: <code>1</code>.</p></div></section><footer class="page-footer"><p>Starter scope · Internal metadata only, no personal data.</p></footer></main></div>
+    <script type="module" src="/src/main.tsx"></script>
+  
+
+</body></html>

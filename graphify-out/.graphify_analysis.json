@@ -1,0 +1,22 @@
+{
+  "communities": {
+    "0": [
+      "readme_new_repo"
+    ]
+  },
+  "cohesion": {
+    "0": 1.0
+  },
+  "gods": [
+    {
+      "id": "readme_new_repo",
+      "label": "new-repo (dummy repository)",
+      "degree": 0
+    }
+  ],
+  "surprises": [],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
