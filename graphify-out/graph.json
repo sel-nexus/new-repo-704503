@@ -487,20 +487,137 @@
       "_origin": "ast"
     },
     {
-      "id": "backend_src_index_closedatabase",
-      "label": "closeDatabase()",
+      "id": "backend_src_lifecycle",
+      "label": "lifecycle.ts",
       "file_type": "code",
-      "source_file": "backend/src/index.ts",
-      "source_location": "L9",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_lifecycle_listener",
+      "label": "Listener",
+      "file_type": "code",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L5",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_lifecycle_listener_on",
+      "label": ".on()",
+      "file_type": "code",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L6",
       "_callable": true,
       "_origin": "ast"
     },
     {
-      "id": "backend_src_index_shutdown",
+      "id": "backend_src_lifecycle_listener_close",
+      "label": ".close()",
+      "file_type": "code",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L7",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_lifecycle_listener_closeallconnections",
+      "label": ".closeAllConnections()",
+      "file_type": "code",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L8",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_lifecycle_dependencies",
+      "label": "Dependencies",
+      "file_type": "code",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L11",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_lifecycle_dependencies_loadconfig",
+      "label": ".loadConfig()",
+      "file_type": "code",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L12",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_lifecycle_dependencies_opendatabase",
+      "label": ".openDatabase()",
+      "file_type": "code",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L13",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_lifecycle_dependencies_listen",
+      "label": ".listen()",
+      "file_type": "code",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L14",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_lifecycle_once",
+      "label": "once()",
+      "file_type": "code",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L16",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_lifecycle_startlifecycle",
+      "label": "startLifecycle()",
+      "file_type": "code",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L28",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_lifecycle_startlifecycle_closedatabase",
+      "label": "closeDatabase()",
+      "file_type": "code",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L32",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_lifecycle_startlifecycle_shutdown",
       "label": "shutdown()",
       "file_type": "code",
-      "source_file": "backend/src/index.ts",
-      "source_location": "L32",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L55",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_middleware_errorhandler",
+      "label": "errorHandler.ts",
+      "file_type": "code",
+      "source_file": "backend/src/middleware/errorHandler.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_src_middleware_errorhandler_errorhandler",
+      "label": "errorHandler()",
+      "file_type": "code",
+      "source_file": "backend/src/middleware/errorHandler.ts",
+      "source_location": "L10",
       "_callable": true,
       "_origin": "ast"
     },
@@ -517,7 +634,24 @@
       "label": "app",
       "file_type": "code",
       "source_file": "backend/tests/health.test.ts",
-      "source_location": "L8",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_lifecycle_test",
+      "label": "lifecycle.test.ts",
+      "file_type": "code",
+      "source_file": "backend/tests/lifecycle.test.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_lifecycle_test_fixture",
+      "label": "fixture()",
+      "file_type": "code",
+      "source_file": "backend/tests/lifecycle.test.ts",
+      "source_location": "L27",
+      "_callable": true,
       "_origin": "ast"
     },
     {
@@ -543,6 +677,14 @@
       "file_type": "code",
       "source_file": "backend/tests/readiness.test.ts",
       "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "backend_tests_starter_integration_test",
+      "label": "starter.integration.test.ts",
+      "file_type": "code",
+      "source_file": "backend/tests/starter.integration.test.ts",
+      "source_location": "L1",
       "_origin": "ast"
     },
     {
@@ -647,6 +789,94 @@
       "file_type": "code",
       "source_file": "backend/vitest.config.ts",
       "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "changelog",
+      "label": "CHANGELOG.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "changelog_changelog",
+      "label": "Changelog",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "changelog_neutral_starter_this_development_run",
+      "label": "Neutral starter \u2014 this development run",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "changelog_added",
+      "label": "Added",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "changelog_modified_files_scope",
+      "label": "Modified files / scope",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "changelog_breaking_changes",
+      "label": "Breaking changes",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "changelog_migration_deployment_notes",
+      "label": "Migration / deployment notes",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "changelog_verification",
+      "label": "Verification",
+      "file_type": "document",
+      "node_kind": "heading",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_e2e_check_states_spec",
+      "label": "check-states.spec.ts",
+      "file_type": "code",
+      "source_file": "frontend/e2e/check-states.spec.ts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_e2e_check_states_spec_checks",
+      "label": "checks",
+      "file_type": "code",
+      "source_file": "frontend/e2e/check-states.spec.ts",
+      "source_location": "L7",
       "_origin": "ast"
     },
     {
@@ -1063,6 +1293,38 @@
       "file_type": "code",
       "source_file": "frontend/playwright.config.ts",
       "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_preflight",
+      "label": "preflight.mjs",
+      "file_type": "code",
+      "source_file": "frontend/preflight.mjs",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_preflight_backend",
+      "label": "backend",
+      "file_type": "code",
+      "source_file": "frontend/preflight.mjs",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_preflight_frontend",
+      "label": "frontend",
+      "file_type": "code",
+      "source_file": "frontend/preflight.mjs",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "frontend_preflight_captures",
+      "label": "captures",
+      "file_type": "code",
+      "source_file": "frontend/preflight.mjs",
+      "source_location": "L13",
       "_origin": "ast"
     },
     {
@@ -1843,14 +2105,24 @@
     },
     {
       "source": "backend_src_app",
-      "target": "ref_express",
+      "target": "backend_src_middleware_errorhandler",
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/app.ts",
       "source_location": "L4",
       "weight": 1.0,
-      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_app",
+      "target": "backend_src_middleware_errorhandler_errorhandler",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/app.ts",
+      "source_location": "L4",
+      "weight": 1.0,
       "_origin": "ast"
     },
     {
@@ -2187,61 +2459,316 @@
     },
     {
       "source": "backend_src_index",
-      "target": "backend_src_index_closedatabase",
-      "relation": "contains",
+      "target": "backend_src_lifecycle",
+      "relation": "imports_from",
+      "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/index.ts",
-      "source_location": "L9",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
       "source": "backend_src_index",
-      "target": "backend_src_index_shutdown",
-      "relation": "contains",
+      "target": "backend_src_lifecycle_startlifecycle",
+      "relation": "imports",
+      "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/index.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle",
+      "target": "backend_src_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle",
+      "target": "backend_src_config_config",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle",
+      "target": "backend_src_lifecycle_listener",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle_listener",
+      "target": "backend_src_lifecycle_listener_on",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle_listener",
+      "target": "backend_src_lifecycle_listener_close",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle_listener",
+      "target": "backend_src_lifecycle_listener_closeallconnections",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle",
+      "target": "backend_src_lifecycle_dependencies",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle_dependencies",
+      "target": "backend_src_lifecycle_dependencies_loadconfig",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle_dependencies",
+      "target": "backend_src_lifecycle_dependencies_opendatabase",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle_dependencies",
+      "target": "backend_src_lifecycle_dependencies_listen",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle",
+      "target": "backend_src_lifecycle_once",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle",
+      "target": "backend_src_lifecycle_startlifecycle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle_startlifecycle",
+      "target": "backend_src_lifecycle_startlifecycle_closedatabase",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
       "source_location": "L32",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "backend_src_index",
-      "target": "backend_src_index_closedatabase",
-      "relation": "calls",
-      "context": "call",
+      "source": "backend_src_lifecycle_startlifecycle",
+      "target": "backend_src_lifecycle_startlifecycle_shutdown",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "backend/src/index.ts",
-      "source_location": "L26",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L55",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "backend_src_index_shutdown",
-      "target": "backend_src_index_closedatabase",
+      "source": "backend_src_lifecycle_startlifecycle",
+      "target": "backend_src_lifecycle_dependencies_loadconfig",
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "backend/src/index.ts",
-      "source_location": "L38",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L42",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
-      "source": "backend_src_index",
-      "target": "backend_src_index_shutdown",
-      "relation": "indirect_call",
-      "context": "argument",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "backend/src/index.ts",
+      "source": "backend_src_lifecycle_startlifecycle",
+      "target": "backend_src_lifecycle_dependencies_opendatabase",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle_startlifecycle",
+      "target": "backend_src_lifecycle_dependencies_listen",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle_startlifecycle",
+      "target": "backend_src_lifecycle_listener_on",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
       "source_location": "L48",
       "weight": 1.0,
       "_origin": "ast"
     },
     {
+      "source": "backend_src_lifecycle_startlifecycle",
+      "target": "backend_src_lifecycle_startlifecycle_closedatabase",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle_startlifecycle",
+      "target": "backend_src_lifecycle_once",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle_startlifecycle",
+      "target": "backend_src_lifecycle_startlifecycle_shutdown",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle_startlifecycle_closedatabase",
+      "target": "backend_src_lifecycle_listener_close",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle_startlifecycle_shutdown",
+      "target": "backend_src_lifecycle_listener_closeallconnections",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle_startlifecycle_shutdown",
+      "target": "backend_src_lifecycle_startlifecycle_closedatabase",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle_startlifecycle_shutdown",
+      "target": "backend_src_lifecycle_listener_close",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_middleware_errorhandler",
+      "target": "ref_express",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/middleware/errorHandler.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_middleware_errorhandler",
+      "target": "backend_src_middleware_errorhandler_errorhandler",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/middleware/errorHandler.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_tests_health_test",
-      "target": "ref_supertest",
+      "target": "ref_express",
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -2252,12 +2779,35 @@
     },
     {
       "source": "backend_tests_health_test",
-      "target": "backend_src_app",
+      "target": "ref_express",
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/tests/health.test.ts",
       "source_location": "L4",
+      "weight": 1.0,
+      "type_only": true,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_health_test",
+      "target": "ref_supertest",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/health.test.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_health_test",
+      "target": "backend_src_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/health.test.ts",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2268,7 +2818,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/tests/health.test.ts",
-      "source_location": "L4",
+      "source_location": "L6",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2279,7 +2829,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/tests/health.test.ts",
-      "source_location": "L5",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2290,7 +2840,29 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "backend/tests/health.test.ts",
-      "source_location": "L5",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_health_test",
+      "target": "backend_src_middleware_errorhandler",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/health.test.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_health_test",
+      "target": "backend_src_middleware_errorhandler_errorhandler",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/health.test.ts",
+      "source_location": "L8",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2300,7 +2872,94 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/tests/health.test.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_lifecycle_test",
+      "target": "backend_src_config",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/lifecycle.test.ts",
       "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_lifecycle_test",
+      "target": "backend_src_config_loadconfig",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/lifecycle.test.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_lifecycle_test",
+      "target": "backend_src_db_connection",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/lifecycle.test.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_lifecycle_test",
+      "target": "backend_src_db_connection_opendatabase",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/lifecycle.test.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_lifecycle_test",
+      "target": "backend_src_lifecycle",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/lifecycle.test.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_lifecycle_test",
+      "target": "backend_src_lifecycle_startlifecycle",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/lifecycle.test.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_lifecycle_test",
+      "target": "backend_tests_lifecycle_test_fixture",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/lifecycle.test.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_lifecycle_test",
+      "target": "backend_tests_lifecycle_test_fixture",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/lifecycle.test.ts",
+      "source_location": "L58",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2413,6 +3072,61 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_tests_starter_integration_test",
+      "target": "ref_supertest",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/starter.integration.test.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_starter_integration_test",
+      "target": "backend_src_db_connection",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/starter.integration.test.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_starter_integration_test",
+      "target": "backend_src_db_connection_opendatabase",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/starter.integration.test.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_starter_integration_test",
+      "target": "backend_src_app",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/starter.integration.test.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_starter_integration_test",
+      "target": "backend_src_app_createapp",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/starter.integration.test.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_tsconfig",
       "target": "backend_tsconfig_compileroptions",
       "relation": "contains",
@@ -2519,6 +3233,97 @@
       "confidence": "EXTRACTED",
       "source_file": "backend/tsconfig.json",
       "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "changelog",
+      "target": "changelog_changelog",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "changelog_changelog",
+      "target": "changelog_neutral_starter_this_development_run",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "changelog_neutral_starter_this_development_run",
+      "target": "changelog_added",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "changelog_neutral_starter_this_development_run",
+      "target": "changelog_modified_files_scope",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "changelog_neutral_starter_this_development_run",
+      "target": "changelog_breaking_changes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "changelog_neutral_starter_this_development_run",
+      "target": "changelog_migration_deployment_notes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "changelog_neutral_starter_this_development_run",
+      "target": "changelog_verification",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_check_states_spec",
+      "target": "ref_playwright_test",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/check-states.spec.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_e2e_check_states_spec",
+      "target": "frontend_e2e_check_states_spec_checks",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/e2e/check-states.spec.ts",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3048,6 +3853,47 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/playwright.config.ts",
       "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_preflight",
+      "target": "ref_playwright_test",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/preflight.mjs",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_preflight",
+      "target": "frontend_preflight_backend",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/preflight.mjs",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_preflight",
+      "target": "frontend_preflight_frontend",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/preflight.mjs",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "frontend_preflight",
+      "target": "frontend_preflight_captures",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/preflight.mjs",
+      "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3815,6 +4661,28 @@
       "_origin": "ast"
     },
     {
+      "source": "backend_tests_lifecycle_test_fixture",
+      "target": "backend_src_config_loadconfig",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/lifecycle.test.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_lifecycle_test_fixture",
+      "target": "backend_src_db_connection_opendatabase",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/tests/lifecycle.test.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "backend_tests_readiness_test_open",
       "target": "backend_src_db_connection_opendatabase",
       "relation": "calls",
@@ -3844,6 +4712,76 @@
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/features/readiness/ReadinessPage.tsx",
       "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle_dependencies_loadconfig",
+      "target": "backend_src_config_config",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_lifecycle_dependencies_listen",
+      "target": "backend_src_config_config",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/lifecycle.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_app_createapp",
+      "target": "backend_src_middleware_errorhandler_errorhandler",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/app.ts",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_index",
+      "target": "backend_src_config_loadconfig",
+      "relation": "indirect_call",
+      "context": "collection",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/index.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_src_index",
+      "target": "backend_src_db_connection_opendatabase",
+      "relation": "indirect_call",
+      "context": "collection",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/src/index.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "backend_tests_health_test",
+      "target": "backend_src_middleware_errorhandler_errorhandler",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "backend/tests/health.test.ts",
+      "source_location": "L105",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -3897,10 +4835,10 @@
     }
   ],
   "metadata": {
-    "built_at": "2026-11-06T09:29:32.429756+00:00",
+    "built_at": "2026-11-06T09:46:11.820322+00:00",
     "version": "graph_update-v1",
     "codebase_root": "C:\\artifacts-v2\\T0132PcJVCRTV000406112608405188\\developer",
     "force": true,
-    "files_scanned": 33
+    "files_scanned": 40
   }
 }
